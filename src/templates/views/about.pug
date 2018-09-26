@@ -1,0 +1,16 @@
+.row
+	.col
+		p {{data}}
+		//p(ng-repeat = "item in data")
+			span {{item.Name}}
+		table.table.table-bordered
+			thead
+				tr 
+					th Name
+					th City
+					th Country
+			tbody
+				tr(ng-repeat = "item in data") 
+					td {{item.Name}}
+					td {{item.City}}
+					td {{item.Country}}

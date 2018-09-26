@@ -1,0 +1,4 @@
+.row
+	ul.list-inline(ng-repeat="phuong in data") 
+		li(ng-click="loadlist()")
+			a.nav-link {{phuong.name}}

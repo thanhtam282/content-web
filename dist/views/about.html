@@ -1,0 +1,24 @@
+
+<div class="row">
+  <div class="col">
+    <p>{{data}}</p>
+    <!--p(ng-repeat = "item in data")span {{item.Name}}
+    -->
+    <table class="table table-bordered">
+      <thead>
+        <tr> 
+          <th>Name</th>
+          <th>City</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="item in data"> 
+          <td>{{item.Name}}</td>
+          <td>{{item.City}}</td>
+          <td>{{item.Country}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
